@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        @font-face {
+            font-family: 'FloppyDisk';
+            src: url('../fonts/FloppyDisk.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'FloppyDisk', sans-serif;
+            text-align: center;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .coming-soon-text {
+            font-size: 48px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .coming-soon-gif {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .additional-content {
+            margin-top: 40px;
+            font-size: 24px;
+        }
+
+        .tech-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            background-color: transparent;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .tech-button:hover {
+            background-color: #00ff00;
+            color: black;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .coming-soon-text {
+                font-size: 24px;
+            }
+            .tech-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/misc/soon.gif" alt="Coming Soon" class="coming-soon-gif">
+    <div class="coming-soon-text">Coming Soon</div>
+    
+    <!-- Additional content section -->
+    <div class="additional-content">
+        <a href="../index.html" class="tech-button">Go to Home Page</a>
+    </div>
+</body>
+</html>

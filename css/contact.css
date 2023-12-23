@@ -96,3 +96,35 @@ tr td:first-child {
 tr td {
     padding-top: 20px;
 }
+
+
+/* For screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    /* Reset container width to 100% and adjust margins */
+    .container {
+        width: 100%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column; /* Display content vertically */
+        padding-top: 50px; /* Add space between menu and content */
+    }
+
+    .contact-box {
+        flex-direction: column; /* Display contact-box vertically */
+    }
+
+    /* Adjust the width of contact-left and contact-right */
+    .contact-left, .contact-right {
+        flex-basis: auto; /* Let them take the available width */
+        padding: 20px;
+    }
+
+    /* Adjust input fields and labels */
+    .input-group {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* ... (other mobile-specific CSS adjustments) ... */
+}
+

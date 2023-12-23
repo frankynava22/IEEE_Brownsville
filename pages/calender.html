@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- days sourced from: https://nationaldaycalendar.com/february/ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/calender.css" rel="stylesheet">
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Calendar</title>
+    <link rel="stylesheet" href="../css/calender.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="menu-wrap">
+        <input type="checkbox" id="toggler" class="toggler">
+        <label for="toggler" class="hamburger"><div></div></label>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="newteam.html">Team</a></li>
+                        <li><a target="_blank" href="gallery.html">Gallery</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a target="_blank" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <body id="body">
-    <div id="navbar-container"></div>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-048502ab-7e7e-42dd-9512-98a2f747e370"></div>    
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- New JavaScript -->
-    <script src="../javascript/calender.js"></script>
-    <!-- Include your navbar file -->
-    <script src="../javascript/index.js"></script>
-<!-- Call the generateNavbar function and insert the result into the navbar-container div -->
-<script>
-  document.getElementById('navbar-container').innerHTML = generateNavbar();
-</script>
-  </body>
+    <!-- Calendar Widget -->
+    <div class="elfsight-app-048502ab-7e7e-42dd-9512-98a2f747e370"></div>
+
+    <!-- Elfsight Script -->
+    <script src="https://static.elfsight.com/platform/platform.js" defer></script>
+
+    <!-- Custom JavaScript -->
+    <script src="../javascript/calender.js" defer></script>
+</body>
 </html>

@@ -3,27 +3,27 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../css/contact.css" rel="stylesheet">
-
 </head>
 <body>
-    <div id="navbar-container"></div>
 
-    <body>
+
     <div class="container">
         <h1>Connect With Us!</h1>
-        <p> We would love to respond to any qestions you may have. <br> Feel free to get in touch with us.</p>
+        <p>We would love to respond to any questions you may have. Feel free to get in touch with us.</p>
+
+        <!-- Contact Form -->
         <div class="contact-box">
             <div class="contact-left">
-                <h3> Send your request</h3>
-                <form>
-                    <div class="ipnut-row">
+                <h3>Send your request</h3>
+                <form id="contactForm">
+                    <div class="input-row">
                         <div class="input-group">
                             <label>Name</label>
                             <input type="text" placeholder="John Doe">
@@ -33,7 +33,7 @@
                             <input type="text" placeholder="+1 956 123 456 789">
                         </div>
                     </div>
-                    <div class="ipnut-row">
+                    <div class="input-row">
                         <div class="input-group">
                             <label>Email</label>
                             <input type="email" placeholder="username@domain.com">
@@ -43,15 +43,15 @@
                             <input type="text" placeholder="Collaboration">
                         </div>
                     </div>
-                    <label> Message</label>
+                    <label>Message</label>
                     <textarea rows="5" placeholder="Your Message"></textarea>
-
-                    <button type="submit"> SEND</button>
+                    <button type="submit">SEND</button>
                 </form>
             </div>
 
+            <!-- Contact Information -->
             <div class="contact-right">
-                <h3> Reach us</h3>
+                <h3>Reach us</h3>
                 <table>
                     <tr>
                         <td>Email:</td>
@@ -59,28 +59,21 @@
                     </tr>
                     <tr>
                         <td>Instagram:</td>
-                        <td>@ieeebsb</td>
+                        <td>Follow us!</td> <!-- Link to Instagram -->
                     </tr>
                     <tr>
-                        <td>Linkedin:</td>
-                        <td>https://www.linkedin.com/company/ieee-bsb-utrgv/</td>
+                        <td>LinkedIn:</td>
+                        <td><a href="https://www.linkedin.com/YOUR_LINK_HERE" target="_blank">Take me there!</a></td>
                     </tr>
                     <tr>
                         <td>Address:</td>
-                        <td>1 W University Blvd, Brownsville, Texas, 78521</td>
+                        <td><a href="https://maps.google.com/maps?q=1%20W%20University%20Blvd,%20Brownsville,%20Texas,%2078521" target="_blank">View on Google Maps</a></td>
+
                     </tr>
                 </table>
             </div>
-        
         </div>
     </div>
-
-    <!-- Include your navbar.js file -->
-    <script src="../javascript/index.js"></script>
-<!-- Call the generateNavbar function and insert the result into the navbar-container div -->
-<script>
-  document.getElementById('navbar-container').innerHTML = generateNavbar();
-</script>
-
-    </body>
+    <script src="../javascript/contact.js" defer></script>
+</body>
 </html>

@@ -6,96 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/index.css" rel="stylesheet">
-  </head>
+    <!-- Custom CSS for the new section -->
+    <link href="css/index.css" rel="stylesheet">
+        <!-- Custom Font -->
+        <style>
+          @font-face {
+            font-family: 'Floppy Disk';
+            src: url('fonts/FloppyDisk.ttf') format('truetype');
+          }
+        </style>
+  </head>s
   <body id="body">
-    <div id="navbar-container"></div>
-    <!-- New Section -->
-    <div class="hero">
-      <div class="slideshow">
-        <img class="slideshow-image" src="../images/1stGenMeeting.jpg" alt="Image 1">
-        <img class="slideshow-image" src="../images/Summer 2022 IEEE/2.jpg" alt="Image 2">
-        <img class="slideshow-image" src="../images/Summer 2022 IEEE/4.jpg" alt="Image 3">
-        <img class="slideshow-image" src="../images/Summer 2022 IEEE/11.jpg"alt="Image 4">
-        <img class="slideshow-image" src="../images/Summer 2022 IEEE/12.jpg" alt="Image 5">
-      </div>
-      <h1 class="hero-title">IEEE South Texas Brownsville Section</h1>
-      <p class="hero-text">The official homepage for IEEE Brownsville Student Branch</p>
-    </div> 
+    <!-- IEEE BSB Text -->
+    <div class="ieee-bsb">IEEE</div>
 
-    <script src="../javascript/slideshow.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Include your navbar.js file -->
-    <script src="../javascript/index.js"></script>
-<!-- Call the generateNavbar function and insert the result into the navbar-container div -->
-<script>
-  document.getElementById('navbar-container').innerHTML = generateNavbar();
-</script>
-  </body>
-</html>
-<!-- Mission Statements Page-->
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/mission.css" rel="stylesheet">
-  </head>
-    <body>
-    <div class="wrapper">
-        <header class="header"><h1>Our Mission as your Leaders</h1></header>
-        <figure class="featured-image-1">
-            <img src="../images/missionphotoprofdev.jpg" alt="Photo by Karina Carvalho on Unsplash">
-         </figure>
-        <div class="number-1">1</div>
-        <article class="article article-1">
-          <h2>Technical Competancy</h2>
-          <p>Go beyond the classroom and sharpen your technical skills .</p>
-        </article>
-        <figure class="featured-image-2">
-            <img src="../images/profdev.jpg" alt="Photo by JC Dela Cuesta on Unsplash">
-         </figure>
-        <div class="number-2">2</div>
-        <article class="article article-2">
-          <h2>Professional Development</h2>
-          <p>Further expand upon your academic skillset into your future career.</p>
-        </article>
-        <figure class="featured-image-3">
-            <img src="../images/missionphoto3.jpg" alt="Photo by Seth Doyle on Unsplash">
-         </figure>
-        <div class="number-3">3</div>
-        <article class="article article-3">
-          <h2>Networking</h2>
-          <p>Connect with multiple like-minded individuals and future engineers. </p>
-        </article>
-        <figure class="featured-image-4">
-            <img src="../images/missionphoto4.jpg" alt="Photo by Tim Marshall on Unsplash">
-         </figure>
-        <div class="number-4">4</div>
-        <article class="article article-4">
-          <h2>Fun</h2>
-          <p>We hope we can make your journey of academic and professional development as enjoyable as possible!</p>
-        </article>
-      </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Include your navbar.js file -->
-    <script src="../javascript/index.js"></script>
-<!-- Call the generateNavbar function and insert the result into the navbar-container div -->
-<script>
-  document.getElementById('navbar-container').innerHTML = generateNavbar();
-</script>
+    <!---- Hidden Open / Close Toggles ---->
+    <input type="radio" id="nav-close" name="nav-toggle" value="nav-close">
+    <input type="radio" id="nav-toggle" name="nav-toggle" value="nav-toggle">
+    <!---- END Hidden Toggles ---->
+
+    <!---- Visual Open Menu Toggle ---->
+    <a href="javascript:void(0);" class="nav-toggle">
+      <label for="nav-toggle"></label>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+    </a>
+    <!---- END Visual Open Menu Toggle ---->
+
+    <!---- Visual Close Menu Toggle ----->
+    <a href="javascript:void(0);" class="nav-close">
+      <label for="nav-close"></label>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+      </svg>
+    </a>
+    <!---- END Visual Close Menu Toggle ---->
+    <!----- Main Navigation ---->
+    <nav>
+      <ul>
+        <li><a target="_blank" href="pages/gallery.html" title="Home" rel="noopener">Gallery</a></li>
+        <li><a href="pages/newteam.html" title="Team" rel="noopener">Team</a></li>
+        <li><a href="pages/calender.html" title="Calendar" rel="noopener">Calendar</a></li>
+        <li><a href="pages/projects.html" title="Projects" rel="noopener">Projects</a></li>
+        <li><a href="pages/contact.html" title="Contact" rel="noopener" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <!---- END Main Navigation ---->
   </body>
 </html>
