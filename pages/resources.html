@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/resources.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="icon-container">     
+        <a href="https://drive.google.com/drive/folders/1SKbnej_hrN7ZVp2LQcDB9ElUdcYg7xlx" class="icon-link">
+            <div class="icon">
+                <i class="fas fa-folder"></i>
+            </div>
+            <h2>Google Drive</h2>
+        </a>
+        <a href="../pages/contact.html" class="icon-link">
+            <div class="icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <h2>Contact</h2>
+        </a>
+        <a href="https://www.ieee.org/" class="icon-link">
+            <div class="icon">
+                <i class="fas fa-microchip"></i>
+            </div>
+            <h2>Global IEEE Page</h2>
+        </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="../javascript/resources.js"></script>
+    <!-- Include your navbar.js file -->
+    <script src="../javascript/index.js"></script>
+<!-- Call the generateNavbar function and insert the result into the navbar-container div -->
+<script>
+  document.getElementById('navbar-container').innerHTML = generateNavbar();
+</script>
+</body>
+</html>

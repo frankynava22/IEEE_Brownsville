@@ -1,0 +1,67 @@
+/* CSS for officer page */
+body {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .officer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .officer-profile img {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 10px;
+  }
+  
+  .officer-profile h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .officer-profile p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .mission-statement {
+    margin-top: 20px;
+  }
+  
+  .mission-statement h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .mission-statement p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .officer-profile a {
+    text-decoration: none;
+    color: #0077b5; /* LinkedIn blue color */
+    font-weight: bold;
+    font-size: 24px; /* Increase the font size */
+    margin-top: 20px; /* Increase the margin to lower the link */
+  }
+  

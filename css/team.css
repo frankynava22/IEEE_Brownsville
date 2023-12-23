@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.nav-links{
+  color: black;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: white;
+}
+
+.card-img-top {
+  height: 300px; /* Adjust the height as per your design requirements */
+  object-fit: cover;
+}

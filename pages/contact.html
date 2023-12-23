@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/contact.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <body>
+    <div class="container">
+        <h1>Connect With Us!</h1>
+        <p> We would love to respond to any qestions you may have. <br> Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3> Send your request</h3>
+                <form>
+                    <div class="ipnut-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Doe">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+1 956 123 456 789">
+                        </div>
+                    </div>
+                    <div class="ipnut-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="username@domain.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Collaboration">
+                        </div>
+                    </div>
+                    <label> Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit"> SEND</button>
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <h3> Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>ieeebsb@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram:</td>
+                        <td>@ieeebsb</td>
+                    </tr>
+                    <tr>
+                        <td>Linkedin:</td>
+                        <td>https://www.linkedin.com/company/ieee-bsb-utrgv/</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>1 W University Blvd, Brownsville, Texas, 78521</td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- Include your navbar.js file -->
+    <script src="../javascript/index.js"></script>
+<!-- Call the generateNavbar function and insert the result into the navbar-container div -->
+<script>
+  document.getElementById('navbar-container').innerHTML = generateNavbar();
+</script>
+
+    </body>
+</html>

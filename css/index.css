@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.nav-links{
+  color: black;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100% - 56px); /* Adjust as necessary if your navbar height changes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url('../images/nav_image.jpg');
+  }
+}
+
+.hero-title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0; /* Decreased the bottom margin */
+  margin-top: 20px; /* Add margin-top to move the title higher */
+}
+
+.hero-text {
+  font-size: 1.5em;
+  margin-top: 10px; /* Add margin-top to move the text higher */
+}
+
+
+.slideshow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow img:first-child {
+  opacity: 1;
+}
+
